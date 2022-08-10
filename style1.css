@@ -1,0 +1,122 @@
+.sec1{
+    color: black;
+    font-size: 48px;
+    width: 150vw;
+    height: 400px;
+    background-image: url(./Kj5cd8B.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.img1{
+    width: 6000px;
+    height: 500px;
+    position: relative;
+    top: 150px;
+    opacity: 100%;
+    background-image: url(./city.png);
+    background-repeat: repeat-x;
+   animation: img01 12s linear 0s infinite;
+    
+}
+.sec2{
+    z-index: -1;
+    width: 6000px;
+    height: 300px;
+    background-image: url(./road.jpg);
+    background-repeat: repeat-x;
+    animation: img01 12s linear 0s infinite;
+}
+body{ height: auto;
+    margin: 0;
+    width: 1000px;
+}
+.img2{
+    width: 500px;
+    height: 200px;
+    background-image: url(./car.png);
+    background-size: cover;
+    position: relative;
+    bottom: 260px;
+    animation: car 12s linear infinite normal none;
+    
+}
+.img3{
+    width: 90px;
+    position: relative;
+    top: 110px;
+    left: 44px;
+    animation: wheel 1s linear 0s infinite normal both;
+}
+.img4{
+    width: 90px;
+    position: relative;
+    left: 260px;
+    top: 110px;
+    animation: wheel 1s linear 0s infinite normal both;
+}
+.img5{
+    width: 400px;
+    height: 200px;
+position: absolute;
+right: 0;
+animation: moon 200s linear infinite normal ;
+    
+}
+.img6{
+    width: 100px;
+    height: 100px;
+    float: right;
+    
+}
+.text{
+    position: relative;
+    left: 15%;
+    background-image: linear-gradient(
+        to right,
+        orange 0% 25%,
+        white 25% 83%,
+        green 25%
+    );
+    width: 650px;
+}
+.sec1 b
+{
+background-color: orange;
+}
+@keyframes wheel{
+ from{
+    transform: rotate(0deg);
+ }
+ to{
+    transform: rotate(360deg);
+ }
+}
+@keyframes img01 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-2000px);
+        
+    }
+    
+}
+@keyframes car{
+    from{
+        transform: translateX(-450px);
+    }
+    to{
+        transform: translateX(1500px);
+    }
+}
+@keyframes moon {
+    from{
+        right: 0;
+    }
+    to{
+        right: 1000px;
+    }
+    
+}

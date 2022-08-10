@@ -1,0 +1,23 @@
+button:hover{
+    background-color: black;
+    color: wheat;
+}
+button:focus{
+    background-color: brown;
+}
+:not(div, body, html, b){
+    color: brown;
+}
+p::selection{
+    color: blueviolet;
+    background-color: chocolate;
+}
+b::before
+{
+    content: " ";
+    display: inline;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+}

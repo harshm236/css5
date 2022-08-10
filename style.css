@@ -1,0 +1,114 @@
+div{margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+.ol1{
+    margin-left: 600px;
+   
+   padding: 0px;
+   text-align: left;
+}
+body{
+    background-color: yellow;
+}
+.test1{
+    margin: 40px;
+    display: inline-block;
+    background-color: blueviolet;
+    animation: t1 2s linear infinite alternate ;
+}
+
+@keyframes t1 {
+    from{
+      transform: skewX(30deg);
+    } 
+    to{
+        transform: skewX(-30deg);
+    }
+}
+.test2{
+    margin: 40px;
+    display: inline-block;
+    background-color: blueviolet;
+    animation: t2 3s linear infinite alternate ;
+}
+
+@keyframes t2 {
+    from{
+        transform: skewY(30deg);
+    }
+    to{
+        transform: skewY(-30deg);
+    }
+}
+.test3{
+    margin: 40px;
+    display: inline-block;
+    background-color: blueviolet;
+    animation: t3 3s 2s linear infinite normal ;
+    
+    
+}
+
+@keyframes t3{
+
+    from{transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.test4, .test5, .test6{
+    margin: 40px;
+    display: inline-block;
+    background-color: blueviolet;
+}
+.test4{
+    animation: t4 1s infinite alternate linear ;
+}
+
+@keyframes t4 {
+    from{
+        transform: scaleY(0.5);
+    }
+    to {
+       transform: scaleY(1);
+}
+}
+
+.test5{
+    animation: t5 1s infinite alternate linear;
+}
+
+@keyframes t5 {
+    from{
+        transform: scaleX(0.5);
+    }
+    to {
+       transform: scaleX(1);
+    }
+          
+}
+.test6{
+    animation: t6 3s infinite alternate-reverse linear;
+}
+
+@keyframes t6 {
+          from{
+            transform: rotate(0deg);
+          }
+    to{
+        transform: rotate(90deg);
+    }
+}
+.test7, .test8, .test9, .test10, .test11{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    transition-duration: 2s;
+}
+.test7:hover, .test9:hover, .test10:hover, .test11:hover, .test12:hover{
+    width: 300px;
+}
+.test8:hover{
+     width: 450px;
+     height: 450px;
+}
